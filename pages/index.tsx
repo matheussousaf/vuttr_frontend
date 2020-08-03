@@ -1,15 +1,12 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import React from "react";
+import Layout from "@components/Layout/index";
+import { ThemeProvider } from "styled-components";
+import theme from "@styles/theme";
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+  <ThemeProvider theme={theme}>
+    <Layout title="BossaBox Challenge | Very Useful Tools to Remind" />
+  </ThemeProvider>
+);
 
-export default IndexPage
+export default IndexPage;
