@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { calcFontSize } from "@utils/styles";
 
 export const Container = styled.div`
-  margin: 2vw 20px;
+  margin: 2vw 0px;
   padding: 20px 0;
 `;
 

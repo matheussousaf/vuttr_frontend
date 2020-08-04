@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <Container>
       <Title>VUTTR</Title>
-      <SubTitle>Very Useful Tools To Remind</SubTitle>
+      <SubTitle>Very Useful Tools To Remember</SubTitle>
     </Container>
   );
 };

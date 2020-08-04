@@ -24,6 +24,14 @@ export const Title = styled.p`
   font-size: ${calcFontSize(16, 20)};
   line-height: 2em;
   color: ${(props) => props.theme.colors.dark};
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 100ms ease;
+  position: relative;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.primary};
+  }
 `;
 export const Remove = styled.p``;
 export const Tags = styled.div``;

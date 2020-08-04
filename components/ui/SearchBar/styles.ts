@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const Input = styled.input`
   font-family: Source Sans Pro;
-  font-size: ${calcFontSize(16, 20)};
+  font-size: ${calcFontSize(16, 18)};
   padding: 10px 20px;
   outline: none;
   background: #ebeaed;

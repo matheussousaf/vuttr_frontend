@@ -1,12 +1,14 @@
 import React from "react";
-import Layout from "@components/Layout/index";
 import { ThemeProvider } from "styled-components";
 import theme from "@styles/theme";
+import IndexPage from "@components/layouts/IndexPage";
 
-const IndexPage = () => (
-  <ThemeProvider theme={theme}>
-    <Layout title="BossaBox Challenge | Very Useful Tools to Remind" />
-  </ThemeProvider>
-);
+const Index = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <IndexPage title="Bossa Box | Very Useful Tools To Remember" />
+    </ThemeProvider>
+  );
+};
 
-export default IndexPage;
+export default Index;

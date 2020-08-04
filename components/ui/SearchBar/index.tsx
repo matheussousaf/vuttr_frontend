@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { Container, Input } from "./styles";
-import Checkbox from "@components/Checkbox";
+import Checkbox from "@components/ui/Checkbox";
 
 const SearchBar: React.FC = () => {
   const [tagsOnly, setTagsOnly] = useState(false);

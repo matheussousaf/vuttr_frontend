@@ -11,15 +11,16 @@ export const Container = styled.div`
 export const Text = styled.p`
   color: ${(props) => props.theme.colors.dark};
   font-family: Source Sans Pro;
-  font-size: ${calcFontSize(16, 20)};
+  font-size: ${calcFontSize(16, 18)};
 `;
 
 export const CheckContainer = styled.div`
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   background: #ebeaed;
   border-radius: 5px;
   margin-right: 10px;
+  cursor: pointer;
 
   &:hover {
     background: #dedce1;
@@ -28,8 +29,8 @@ export const CheckContainer = styled.div`
 
 export const Checked = styled.div`
   background: ${(props) => props.theme.colors.primary};
-  height: 24px;
-  width: 24px;
+  height: 19px;
+  width: 19px;
   border-radius: 5px;
   display: flex;
   align-items: center;
