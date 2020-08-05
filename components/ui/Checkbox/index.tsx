@@ -6,6 +6,7 @@ interface Props {
   text?: string;
   value?: any;
   setValue?(): any;
+  className?: string;
 }
 
 const Check: React.FC<Props> = () => {
@@ -16,9 +17,14 @@ const Check: React.FC<Props> = () => {
   );
 };
 
-const Checkbox: React.FC<Props> = ({ text, value = true, setValue }) => {
+const Checkbox: React.FC<Props> = ({
+  text,
+  value = true,
+  setValue,
+  className,
+}) => {
   return (
-    <Container>
+    <Container className={className}>
       <CheckContainer onClick={setValue}>
         {value ? <Check /> : null}
       </CheckContainer>

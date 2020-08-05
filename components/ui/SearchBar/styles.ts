@@ -2,9 +2,6 @@ import styled from "styled-components";
 import { calcFontSize } from "@utils/styles";
 
 export const Container = styled.div`
-  width: 70%;
-  align-items: center;
-  justify-content: center;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -19,6 +16,10 @@ export const Input = styled.input`
   border-radius: 5px;
   color: #170c3a;
   border: 1px solid #ebeaed;
+
+  @media (max-width: 768px) {
+    width: 85vw;
+  }
 
   &::placeholder {
     color: #b1adb9;

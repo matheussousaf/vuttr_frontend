@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { calcFontSize } from "@utils/styles";
 
 export const Container = styled.div`
   width: 100%;
@@ -16,12 +15,20 @@ export const Header = styled.div``;
 export const Description = styled.p`
   font-family: Source Sans Pro;
   color: ${(props) => props.theme.colors.dark};
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 45vw;
+
+  @media (max-width: 768px) {
+    max-width: 60vw;
+  }
 `;
 
 export const Title = styled.p`
   font-family: Source Sans Pro;
   font-weight: 600;
-  font-size: ${calcFontSize(16, 20)};
+  font-size: 20px;
   line-height: 2em;
   color: ${(props) => props.theme.colors.dark};
   text-decoration: underline;

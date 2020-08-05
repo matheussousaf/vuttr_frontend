@@ -14,11 +14,14 @@ import {
   PlusIcon,
   Cards,
   StyledButton,
+  Search,
+  StyledCheckbox,
 } from "./styles";
 import { Page } from "interfaces";
 
 const IndexPage: React.FC<Page> = ({ title = "This is the default title" }) => {
   const [newToolModal, toggleNewToolModal] = useState(false);
+  const [tagsOnly, setTagsOnly] = useState(false);
 
   return (
     <div>
@@ -32,7 +35,14 @@ const IndexPage: React.FC<Page> = ({ title = "This is the default title" }) => {
         <Content>
           <Header />
           <Options>
-            <SearchBar />
+            <Search>
+              <SearchBar />
+              <StyledCheckbox
+                text="Search in tags only"
+                value={tagsOnly}
+                setValue={() => setTagsOnly(!tagsOnly)}
+              />
+            </Search>
             <StyledButton
               text="Add"
               icon={<PlusIcon size={25} />}
@@ -51,6 +61,18 @@ const IndexPage: React.FC<Page> = ({ title = "This is the default title" }) => {
             <Card
               title="fastify"
               description="Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim."
+            />
+            <Card
+              title="Node.js"
+              description="Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim."
+            />
+            <Card
+              title="React"
+              description="Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim."
+            />
+            <Card
+              title="Ruby"
+              description="Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim.Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim.Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim.Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim. Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim.Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim.Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim."
             />
           </Cards>
           <Modal

@@ -6,11 +6,17 @@ interface Props {
   text?: string;
   onClick?(): any;
   icon?: any;
+  className?: string;
 }
 
-const Button: React.FC<Props> = ({ text, onClick, icon }) => {
+const Button: React.FC<Props> = ({
+  className,
+  text,
+  onClick,
+  icon,
+}) => {
   return (
-    <Container onClick={onClick}>
+    <Container className={className} onClick={onClick}>
       {icon ?? null}
       <Text>{text}</Text>
     </Container>

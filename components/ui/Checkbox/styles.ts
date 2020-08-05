@@ -4,10 +4,12 @@ import { Check as CheckImported } from "@styled-icons/boxicons-regular/Check";
 
 export const Container = styled.div`
   display: flex;
+  flex-shrink: 0;
   margin-left: 20px;
   align-items: center;
   justify-content: center;
 `;
+
 export const Text = styled.p`
   color: ${(props) => props.theme.colors.dark};
   font-family: Source Sans Pro;
