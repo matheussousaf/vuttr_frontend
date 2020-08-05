@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { calcFontSize } from "@utils/styles";
+import { calcFontSize } from "src/utils/styles";
 
 export const Container = styled.div`
   display: flex;

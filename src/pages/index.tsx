@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import theme from "@styles/theme";
-import IndexPage from "@components/layouts/IndexPage";
+import theme from "src/styles/theme";
+import IndexPage from "src/components/layouts/IndexPage";
 
 const Index = () => {
   return (

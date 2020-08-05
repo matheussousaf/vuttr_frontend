@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Checkbox from "@components/ui/Checkbox";
+import Checkbox from "src/components/ui/Checkbox";
 
 
 export const Search = styled.div`

@@ -11,7 +11,7 @@ import {
   Tag,
   Description,
 } from "./styles";
-import { Tool } from "interfaces";
+import { Tool } from "src/interfaces";
 
 const Card: React.FC<Tool> = ({ title, description, tags }) => {
   return (

@@ -13,13 +13,13 @@
       "module-resolver",
       {
         "alias": {
-          "@components": "./components",
-          "@utils": "./utils",
-          "@config": "./config",
-          "@pages": "./pages",
-          "@services": "./services",
-          "@contexts": "./contexts",
-          "@styles": "./styles"
+          "@components": "./src/components",
+          "@utils": "./src/utils",
+          "@config": "./src/config",
+          "@pages": "./src/pages",
+          "@services": "./src/services",
+          "@contexts": "./src/contexts",
+          "@styles": "./src/styles"
         }
       }
     ]

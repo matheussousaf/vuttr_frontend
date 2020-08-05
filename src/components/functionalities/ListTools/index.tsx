@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "@components/ui/Card";
+import Card from "src/components/ui/Card";
 import { Cards } from "./styles";
-import { Tool } from "interfaces";
+import { Tool } from "src/interfaces";
 
 // import { Container } from './styles';
 
