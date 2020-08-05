@@ -6,7 +6,7 @@ import Checkbox from "@components/ui/Checkbox";
 export const Container = styled.div`
   width: 100vw;
   overflow-x: hidden;
-  height: auto;
+  height: 100%;
   justify-content: center;
   display: flex;
   margin: auto;
@@ -35,18 +35,6 @@ export const PlusIcon = styled(Plus)`
   color: white;
 `;
 
-export const Cards = styled.div`
-  @media (max-width: 768px) {
-    margin-top: 130px;
-  }
-`;
-
-export const Search = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-`;
 
 export const StyledButton = styled(Button)`
   @media (max-width: 768px) {

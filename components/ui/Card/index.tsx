@@ -1,22 +1,34 @@
 import React from "react";
+import { Close } from "@styled-icons/evaicons-solid/Close";
 
-import { Container, Header, Title, Remove, Tags, Description } from "./styles";
+import {
+  Container,
+  Header,
+  Title,
+  Remove,
+  RemoveContainer,
+  Tags,
+  Tag,
+  Description,
+} from "./styles";
+import { Tool } from "interfaces";
 
-interface Props {
-  title?: string;
-  tags?: string[];
-  description?: string;
-}
-
-const Card: React.FC<Props> = ({ title, description, tags }) => {
+const Card: React.FC<Tool> = ({ title, description, tags }) => {
   return (
     <Container>
       <Header>
         <Title>{title}</Title>
-        <Remove />
+        <RemoveContainer>
+          <Close size={22} color={"#F95E5A"} />
+          <Remove>Remover</Remove>
+        </RemoveContainer>
       </Header>
       <Description>{description}</Description>
-      <Tags />
+      <Tags>
+        {tags.map((tag, index) => {
+          return <Tag key={index}>{tag}</Tag>;
+        })}
+      </Tags>
     </Container>
   );
 };

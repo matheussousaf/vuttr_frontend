@@ -15,3 +15,9 @@ export type Page = {
   children?: ReactNode;
   title?: string;
 };
+
+export interface Tool {
+  title: string;
+  description: string;
+  tags: string[];
+}

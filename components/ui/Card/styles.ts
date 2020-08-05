@@ -8,9 +8,17 @@ export const Container = styled.div`
   padding: 20px;
   margin: 20px 0;
   border-radius: 5px;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: red;
+  }
 `;
 
-export const Header = styled.div``;
+export const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 export const Description = styled.p`
   font-family: Source Sans Pro;
@@ -40,5 +48,42 @@ export const Title = styled.p`
     color: ${(props) => props.theme.colors.primary};
   }
 `;
-export const Remove = styled.p``;
-export const Tags = styled.div``;
+export const Remove = styled.p`
+  color: ${(props) => props.theme.colors.dark};
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const Tags = styled.div`
+  margin-top: 10px;
+  display: flex;
+  overflow: scroll;
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+`;
+
+export const Tag = styled.p`
+  background: #e1e7fd;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: ${(props) => props.theme.colors.dark};
+  margin-right: 10px;
+`;
+
+export const RemoveContainer = styled.div`
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
