@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Header from "@components/ui/Header";
 import { GlobalStyle } from "@styles/global";
-import Card from "@components/ui/Card";
 import Footer from "@components/ui/Footer";
 import Modal from "@components/ui/Modal";
 import AddTool from "@components/functionalities/AddTool";

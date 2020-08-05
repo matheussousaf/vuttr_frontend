@@ -26,7 +26,7 @@ export const Description = styled.p`
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  max-width: 45vw;
+  max-width: 40vw;
 
   @media (max-width: 768px) {
     max-width: 60vw;

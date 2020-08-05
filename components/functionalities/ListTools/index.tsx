@@ -29,7 +29,7 @@ const ListTools: React.FC = () => {
     {
       title: "React.js",
       description:
-        "Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim.",
+        "Cillum reprehenderit elit nulla eu do deserunt cupidatat dolore ex excepteur nisi nostrud ad. Consequat excepteur dolor enim",
       tags: ["documentation", "development", "backend", "frontend"],
     },
   ];
