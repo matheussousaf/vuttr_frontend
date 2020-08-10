@@ -1,8 +1,13 @@
 import styled from "styled-components";
-import { calcFontSize } from "src/utils/styles";
+import { calcFontSize } from "@utils/styles";
 
-export const Container = styled.div`
-  background: ${(props) => props.theme.colors.primary};
+interface ButtonContainerProps {
+  isDanger?: boolean;
+}
+
+export const Container = styled.div<ButtonContainerProps>`
+  background: ${(props) =>
+    props.isDanger ? "#F95E5A" : props.theme.colors.primary};
   width: 120px;
   height: 50px;
   border-radius: 5px;
@@ -12,13 +17,12 @@ export const Container = styled.div`
   cursor: pointer;
 
   &:hover {
-    background: #2f55cc;
+    background: ${(props) => (props.isDanger ? "#CC4C4C" : "#2f55cc")};
   }
 
   &:active {
-    background: #244AA8;
+    background: ${(props) => (props.isDanger ? "#A53F3F" : "#244aa8")};
   }
-
 `;
 
 export const Text = styled.p`

@@ -21,6 +21,7 @@
           "@contexts": "./src/contexts",
           "@styles": "./src/styles",
           "@tests": "./src/tests",
+          "@interfaces": "./src/interfaces"
         }
       }
     ]

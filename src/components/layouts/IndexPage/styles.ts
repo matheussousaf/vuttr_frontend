@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Plus } from "@styled-icons/boxicons-regular/Plus";
-import Button from "src/components/ui/Button";
-import Checkbox from "src/components/ui/Checkbox";
+import Button from "@components/ui/Button";
+import Checkbox from "@components/ui/Checkbox";
 
 export const Container = styled.div`
   width: 100vw;

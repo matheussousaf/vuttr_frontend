@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-
-import { Container, Input } from "./styles";
+import { Container, SearchIcon, StyledInput }  from "./styles";
 
 const SearchBar: React.FC = () => {
   return (
     <Container>
-      <Input placeholder="Search"></Input>
+      <SearchIcon size={22}></SearchIcon>
+      <StyledInput placeholder="Search" />
     </Container>
   );
 };

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Header from "src/components/ui/Header";
-import { GlobalStyle } from "src/styles/global";
-import Footer from "src/components/ui/Footer";
-import Modal from "src/components/ui/Modal";
-import AddTool from "src/components/functionalities/AddTool";
+import Header from "@components/ui/Header";
+import { GlobalStyle } from "@styles/global";
+import Footer from "@components/ui/Footer";
+import Modal from "@components/ui/Modal";
+import AddTool from "@components/functionalities/AddTool";
 import { Container, Options, Content, PlusIcon, StyledButton } from "./styles";
-import { Page } from "src/interfaces";
-import SearchTool from "src/components/functionalities/SearchTool";
-import ListTools from "src/components/functionalities/ListTools";
+import { Page } from "@interfaces/index";
+import SearchTool from "@components/functionalities/SearchTool";
+import ListTools from "@components/functionalities/ListTools";
 
 const IndexPage: React.FC<Page> = ({ title = "This is the default title" }) => {
   const [newToolModal, toggleNewToolModal] = useState(false);
@@ -36,6 +36,7 @@ const IndexPage: React.FC<Page> = ({ title = "This is the default title" }) => {
           <Modal
             openWhen={newToolModal}
             close={() => toggleNewToolModal(false)}
+            animation="bounceIn"
           >
             <AddTool />
           </Modal>

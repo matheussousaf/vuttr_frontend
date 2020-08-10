@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 
 import { Container, Text } from "./styles";
 
@@ -7,6 +7,8 @@ interface Props {
   onClick?(): any;
   icon?: any;
   className?: string;
+  style?: CSSProperties;
+  isDanger?: boolean;
 }
 
 const Button: React.FC<Props> = ({
@@ -14,9 +16,16 @@ const Button: React.FC<Props> = ({
   text,
   onClick,
   icon,
+  style,
+  isDanger,
 }) => {
   return (
-    <Container className={className} onClick={onClick}>
+    <Container
+      isDanger={isDanger}
+      style={style}
+      className={className}
+      onClick={onClick}
+    >
       {icon ?? null}
       <Text>{text}</Text>
     </Container>

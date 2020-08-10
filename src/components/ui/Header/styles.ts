@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { calcFontSize } from "src/utils/styles";
+import { calcFontSize } from "@utils/styles";
 
 export const Container = styled.div`
   margin: 2vw 0px;

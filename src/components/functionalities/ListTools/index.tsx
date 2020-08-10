@@ -1,12 +1,11 @@
 import React from "react";
-import Card from "src/components/ui/Card";
+import Card from "@components/ui/Card";
 import { Cards } from "./styles";
-import { Tool } from "src/interfaces";
+import { Tool } from "@interfaces/index";
 
 // import { Container } from './styles';
 
 const ListTools: React.FC = () => {
-
   const tools: Tool[] = [
     {
       title: "Notion",
