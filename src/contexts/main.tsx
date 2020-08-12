@@ -1,9 +1,20 @@
-import React from "react";
+import React, { createContext, useContext } from "react";
+import { Tool } from "@interfaces/index";
 
-// import { Container } from './styles';
+interface MainContext {
+  tools: Tool[];
+}
 
-const Main: React.FC = () => {
-  return <div />;
+const MainContext = createContext({} as MainContext);
+
+const MainProvider: React.FC = ({ children }) => {
+  return (
+    <MainContext.Provider value={{} as MainContext}>
+      {children}
+    </MainContext.Provider>
+  );
 };
+
+export const useMainContext = () => useContext(MainContext);
 
 export default Main;
