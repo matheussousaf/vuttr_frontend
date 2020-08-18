@@ -2,7 +2,7 @@
    <img src="assets/logo.png" width="200"/>
 </p>
 
-# :bulb: [BACKEND] Very Useful Tools To Remember
+# :bulb: [FRONTEND] Very Useful Tools To Remember
 
 [![Author](https://img.shields.io/badge/author-matheussousaf-fff000?style=flat-square)](https://github.com/matheussousaf)
 [![Languages](https://img.shields.io/github/languages/count/matheussousaf/vuttr_backend?color=%23fff000&style=flat-square)](#)
